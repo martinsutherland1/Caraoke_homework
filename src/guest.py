@@ -13,3 +13,8 @@ class Guest:
     def buy_from_menu(self, order):
         self.wallet -= order.price
         self.tab += order.price
+
+    def is_guest_skint(self, guest):
+        if guest.wallet == 0:
+            return "Skint!"
+        return "Still loaded!"

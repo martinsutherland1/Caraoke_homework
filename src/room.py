@@ -41,7 +41,3 @@ class Room:
             if fave_song == song:
                 return "Whoo!"
         return "Boo!"
-
-    def add_to_customer_tab(self, guest, order):
-        guest.buy_from_menu(order)
-        guest.guest_tab += order.price
